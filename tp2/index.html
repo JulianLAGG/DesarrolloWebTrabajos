@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Navbar con flexbox</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .bar-retorno {
+                padding: 15px 20px 5px 20px;
+            }
+            .btn-volver {
+                display: inline-block;
+                padding: 8px 16px;
+                background-color: #463f3a;
+                color: #f4f3ee;
+                text-decoration: none;
+                border-radius: 4px;
+                font-size: 0.9rem;
+                font-weight: bold;
+                transition: background-color 0.2s ease;
+            }
+            .btn-volver:hover {
+                background-color: #e0afa0;
+                color: #463f3a;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bar-retorno">
+            <a href="../index.html" class="btn-volver"
+                >← Volver al Menú Principal</a
+            >
+        </div>
+
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#inicio">MiSitio</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+
+                <li>
+                    <a
+                        href="https://www.google.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Google</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.github.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Github</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <main style="padding: 3rem; text-align: center">
+            <h1 id="inicio">Bienvenidos a MiSitio</h1>
+            <p>ejemplo de navegación con enlaces internos y externos</p>
+        </main>
+    </body>
+</html>

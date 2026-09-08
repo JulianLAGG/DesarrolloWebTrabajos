@@ -1,0 +1,52 @@
+:root {
+    --bg-principal: #f4f3ee; /* Fondo general */
+    --bg-navbar: #463f3a; /* Fondo del navbar */
+    --texto-principal: #463f3a; /* Texto general */
+    --texto-logo: #e0afa0; /* Acento terracota para el logo */
+    --texto-links: #bcb8b1; /* Enlaces inactivos */
+    --texto-hover: #e0afa0; /* Enlaces al pasar el mouse */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-navbar);
+    padding: 1rem 2rem;
+}
+
+.navbar-logo a {
+    color: var(--texto-logo);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar-links a {
+    color: var(--texto-links);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: var(--texto-hover);
+}

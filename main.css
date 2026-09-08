@@ -1,0 +1,161 @@
+/* Variables con tu paleta cálida */
+:root {
+    --bg-principal: #d8d0c1; /* Fondo general cálido */
+    --bg-tarjeta: #e0d3de; /* Contenedores y tarjetas */
+    --bg-superficie: #cbb8a9; /* Bordes y detalles neutros */
+    --color-acento: #b3b492; /* Verde oliva para detalles principales */
+    --color-texto: #6f686d; /* Gris cálido para lecturas largas */
+    --texto-oscuro: #4a4448; /* Gris más intenso para títulos */
+    --blanco-suave: #f2ece9; /* Fondo claro para badges y botones */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--color-texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Principal */
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-acento);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-logo span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--blanco-suave);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--blanco-suave);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--texto-oscuro);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem 1.5rem;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    color: var(--texto-oscuro);
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: var(--color-texto);
+    font-size: 1.1rem;
+}
+
+/* Grid de Tarjetas */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    flex-grow: 1;
+}
+
+.tp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.tp-card {
+    background-color: var(--bg-tarjeta);
+    border: 1px solid var(--bg-superficie);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.tp-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-acento);
+}
+
+.tp-badge {
+    align-self: flex-start;
+    background-color: var(--color-acento);
+    color: var(--blanco-suave);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.tp-card h2 {
+    font-size: 1.3rem;
+    color: var(--texto-oscuro);
+    margin-bottom: 0.5rem;
+}
+
+.tp-card p {
+    color: var(--color-texto);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--bg-superficie);
+    color: var(--texto-oscuro);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--color-acento);
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-acento);
+    color: var(--blanco-suave);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--color-texto);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--bg-superficie);
+    margin-top: auto;
+}
