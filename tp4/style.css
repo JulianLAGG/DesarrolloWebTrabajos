@@ -5,9 +5,17 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Pasamos las reglas de grid del body a este contenedor */
+.contenedor-grid {
     display: grid;
+    flex: 1;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
     grid-template-areas:
@@ -16,7 +24,7 @@ body {
         "section aside"
         "article aside"
         "footer footer";
-    gap: 10 px;
+    gap: 10px; /* Corregido sin espacio entre 10 y px */
 }
 
 .header {
