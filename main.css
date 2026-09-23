@@ -1,12 +1,11 @@
-/* Variables con tu paleta cálida */
 :root {
-    --bg-principal: #d8d0c1; /* Fondo general cálido */
-    --bg-tarjeta: #e0d3de; /* Contenedores y tarjetas */
-    --bg-superficie: #cbb8a9; /* Bordes y detalles neutros */
-    --color-acento: #b3b492; /* Verde oliva para detalles principales */
-    --color-texto: #6f686d; /* Gris cálido para lecturas largas */
-    --texto-oscuro: #4a4448; /* Gris más intenso para títulos */
-    --blanco-suave: #f2ece9; /* Fondo claro para badges y botones */
+    --bg-principal: #d8d0c1;
+    --bg-tarjeta: #e0d3de;
+    --bg-superficie: #cbb8a9;
+    --color-acento: #b3b492;
+    --color-texto: #6f686d;
+    --texto-oscuro: #4a4448;
+    --blanco-suave: #f2ece9;
 }
 
 * {
@@ -24,7 +23,6 @@ body {
     flex-direction: column;
 }
 
-/* Navbar Principal */
 .main-navbar {
     display: flex;
     justify-content: space-between;
@@ -60,7 +58,6 @@ body {
     color: var(--texto-oscuro);
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     padding: 3rem 1rem 1.5rem;
@@ -77,7 +74,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Grid de Tarjetas */
 .container {
     max-width: 1000px;
     margin: 0 auto;

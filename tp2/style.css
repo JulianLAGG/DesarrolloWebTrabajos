@@ -1,10 +1,10 @@
 :root {
-    --bg-principal: #f4f3ee; /* Fondo general */
-    --bg-navbar: #463f3a; /* Fondo del navbar */
-    --texto-principal: #463f3a; /* Texto general */
-    --texto-logo: #e0afa0; /* Acento terracota para el logo */
-    --texto-links: #bcb8b1; /* Enlaces inactivos */
-    --texto-hover: #e0afa0; /* Enlaces al pasar el mouse */
+    --bg-principal: #f4f3ee;
+    --bg-navbar: #463f3a;
+    --texto-principal: #463f3a;
+    --texto-logo: #e0afa0;
+    --texto-links: #bcb8b1;
+    --texto-hover: #e0afa0;
 }
 
 * {
