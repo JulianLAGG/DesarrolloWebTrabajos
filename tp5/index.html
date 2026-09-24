@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TP - 5 - Página con flexbox</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .bar-top {
+                max-width: 1000px;
+                margin: 15px auto 15px auto;
+                padding: 0 20px;
+                display: block;
+            }
+            .btn-volver {
+                display: inline-block;
+                padding: 8px 16px;
+                background-color: #2d3748;
+                color: #ffffff;
+                text-decoration: none;
+                border-radius: 4px;
+                font-size: 0.9rem;
+                font-weight: bold;
+                transition: background-color 0.2s ease;
+            }
+            .btn-volver:hover {
+                background-color: #b3b492;
+                color: #1a1a1a;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bar-top">
+            <a href="../index.html" class="btn-volver"
+                >← Volver al Menú Principal</a
+            >
+        </div>
+
+        <div class="contenedor">
+            <header class="header">
+                <div class="logo">FASHION</div>
+
+                <nav class="nav-links">
+                    <span>CATALOGUE</span>
+                    <span>FASHION</span>
+                    <span>FAVOURITE</span>
+                    <span>LIFESTYLE</span>
+                    <a href="#" class="btn-signup">SIGN UP</a>
+                </nav>
+            </header>
+
+            <main class="hero">
+                <div class="hero-texto">
+                    <h1 class="titulo-principal">
+                        <span class="fondo-blanco">LET'S</span> <br />
+                        EXPLORE <br />
+                        <span class="fondo-amarillo">UNIQUE</span> <br />
+                        CLOTHES.
+                    </h1>
+                    <p class="subtitulo">
+                        Live for Influential and Innovative fashion!
+                    </p>
+                    <a href="#" class="btn-shop">Shop Now</a>
+                </div>
+
+                <div class="hero-imagen">
+                    <img
+                        src="img/poster.jpg"
+                        alt="Poster-PinkFloyd-WishYouWereHere"
+                        class="img-poster"
+                    />
+                </div>
+            </main>
+
+            <section class="marcas">
+                <img src="img/hm-logo.png" alt="H&M" />
+                <img src="img/obey-logo.svg" alt="OBEY" />
+                <img src="img/shopify-logo.svg" alt="Shopify" />
+                <img src="img/lacoste-logo.png" alt="LACOSTE" />
+                <img src="img/levis-logo.png" alt="Levi's" />
+                <img src="img/amazon-logo.svg" alt="Amazon" />
+            </section>
+        </div>
+    </body>
+</html>
